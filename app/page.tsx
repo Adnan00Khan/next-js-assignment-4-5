@@ -1,101 +1,51 @@
 import Image from "next/image";
+import amazon from "../img/amazon.png"
+import Link from "next/link";
+import congolain from "../img/1253_6fedaa1b4bd6d9e-1920x1080.jpeg"
+import Daintre from "../img/TourFocus-960x800.jpg"
+import Kanh from "../img/kanha-national-park1.jpg"
+import monteverde from "../img/mal.png"
+import tongass from "../img/Destinations_ParksPublicLands_Tongass National Forest_Hero_(ATIA, Mark Kelley).jpg"
 
-export default function Home() {
+export default function home() { 
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    <div className="flex justify-center w-[100%] h-[100%] bg-[#ecf39e] p-11 flex-wrap">
+      <div className=" w-[250px] sm:w-[250px] md:w-[250px] lg:w-[250px]  h-[300px] sm:h-[300px] md:h-[300px] lg:h-[300px] bg-[#31572c] sm:bg-[#31572c] md:bg-[#31572c] lg:bg-[#31572c]  rounded-xl shadow-xl m-3 relative">
+      <Image src={amazon} alt="" width={250} className="h-32 rounded-xl"/>
+      <h1 className="font-bold mt-1 text-[#ecf39e] text-center">Amazon Rainforest</h1>
+      <p className="text-[#ecf39e] text-sm/4 m-1 justify-center text-center">The Amazon rainforest, covering much of northwestern Brazil and extending into Colombia, Peru and other South American countries, is the world’s largest tropical rainforest,</p>
+      <Link href="./amazon"><button className=" rounded-xl bg-[#90a955] w-[100px] mt-1 ml-8 justify-center absolute bottom-4 left-10 text-center text-[#132a13] border-solid border-2 border-[#132a13]">More</button></Link>
+      </div>
+      <div className=" w-[250px] sm:w-[250px] md:w-[250px] lg:w-[250px]  h-[300px] sm:h-[300px] md:h-[300px] lg:h-[300px] bg-[#31572c] sm:bg-[#31572c] md:bg-[#31572c] lg:bg-[#31572c]  rounded-xl shadow-xl m-3 relative">
+      <Image src={congolain} alt="" width={250} className="h-32 rounded-xl"/>
+      <h1 className="font-bold mt-1 text-[#ecf39e] text-center">Congolian rainforests</h1>
+      <p className="text-[#ecf39e] text-sm/4 m-1 justify-center text-center">The Congolian rainforest is the world's second-largest tropical forest, after the Amazon rainforest. It covers over 500,000,000 acres (2,000,000 km2) across six countries and contains a quarter of the world's remaining tropical forest.</p>
+      <Link href="./Congolian-rainforests"><button className="border-solid border-2 border-[#132a13] rounded-xl bg-[#90a955] w-[100px] mt-1 ml-8 justify-center absolute bottom-4 left-10 text-center text-[#132a13]">More</button></Link>
+      </div>
+      <div className=" w-[250px] sm:w-[250px] md:w-[250px] lg:w-[250px]  h-[300px] sm:h-[300px] md:h-[300px] lg:h-[300px] bg-[#31572c] sm:bg-[#31572c] md:bg-[#31572c] lg:bg-[#31572c]  rounded-xl shadow-xl m-3 relative">
+      <Image src={Daintre} alt="" width={250} className="h-32 rounded-xl"/>
+      <h1 className="font-bold mt-1 text-[#ecf39e] text-center">Daintree Rainforest</h1>
+      <p className="text-[#ecf39e] text-sm/4 m-1 justify-center text-center">The Daintree Rainforest, also known as the Daintree, is a region on the northeastern coast of Queensland, Australia, about 105 km (65 mi), by road, north of the city of Cairns.</p>
+      <Link href="./Daintree"><button className="border-solid border-2 border-[#132a13] rounded-xl bg-[#90a955] w-[100px] mt-1 ml-8 justify-center absolute bottom-4 left-10 text-center text-[#132a13]">More</button></Link>
+      </div>
+      <div className=" w-[250px] sm:w-[250px] md:w-[250px] lg:w-[250px]  h-[300px] sm:h-[300px] md:h-[300px] lg:h-[300px] bg-[#31572c] sm:bg-[#31572c] md:bg-[#31572c] lg:bg-[#31572c]  rounded-xl shadow-xl m-3 relative">
+      <Image src={Kanh} alt="" width={250} className="h-32 rounded-xl"/>
+      <h1 className="font-bold mt-1 text-[#ecf39e] text-center">Kanha Tiger Reserve</h1>
+      <p className="text-[#ecf39e] text-sm/4 m-1 justify-center text-center">Kanha Tiger Reserve, also known as Kanha–Kisli National Park, is one of the tiger reserves of India and the largest national park of the state of Madhya Pradesh</p>
+     <Link href="./Kanha"><button className="border-solid border-2 border-[#132a13] rounded-xl bg-[#90a955] w-[100px] mt-1 ml-8 justify-center absolute bottom-4 left-10 text-center text-[#132a13]">More</button></Link>
+      </div>
+      <div className=" w-[250px] sm:w-[250px] md:w-[250px] lg:w-[250px]  h-[300px] sm:h-[300px] md:h-[300px] lg:h-[300px] bg-[#31572c] sm:bg-[#31572c] md:bg-[#31572c] lg:bg-[#31572c]  rounded-xl shadow-xl m-3 relative">
+      <Image src={monteverde} alt="" width={250} className="h-32 rounded-xl"/>
+      <h1 className="font-bold mt-1 text-[#ecf39e] text-center">Monteverde Cloud Forest Reserve</h1>
+      <p className="text-[#ecf39e] text-sm/4 m-1 justify-center text-center">The Monteverde Cloud Forest Reserve (Spanish: Reserva Biológica Bosque Nuboso Monteverde)</p>
+      <Link href="./Monteverde"><button className="border-solid border-2 border-[#132a13] rounded-xl bg-[#90a955] w-[100px] mt-1 ml-8 justify-center absolute bottom-4 left-10 text-center text-[#132a13]">More</button></Link>
+      </div>
+      <div className=" w-[250px] sm:w-[250px] md:w-[250px] lg:w-[250px]  h-[300px] sm:h-[300px] md:h-[300px] lg:h-[300px] bg-[#31572c] sm:bg-[#31572c] md:bg-[#31572c] lg:bg-[#31572c]  rounded-xl shadow-xl m-3 relative">
+      <Image src={tongass} alt="" width={250} className="h-32 rounded-xl"/>
+      <h1 className="font-bold mt-1 text-[#ecf39e] text-center">Tongass National Forest</h1>
+      <p className="text-[#ecf39e] text-sm/4 m-1 justify-center text-center">The Tongass National Forest (/ˈtɒŋɡəs/) in Southeast Alaska is the largest U.S. National Forest at 16.7 million acres (26,100 sq mi; 6,800,000 ha; 68,000 km2).</p>
+      <Link href="./Tongass"><button className="border-solid border-2 border-[#132a13] rounded-xl bg-[#90a955] w-[100px] mt-1 ml-8 justify-center absolute bottom-4 left-10 text-center text-[#132a13]">More</button></Link>
+      </div>
     </div>
   );
 }
