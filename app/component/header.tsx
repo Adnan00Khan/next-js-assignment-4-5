@@ -6,7 +6,7 @@ export default function Header(){
         <ul className="flex place-content-center ">
             <li className="m-3 text-[#ecf39e] text-lg"><Link href="/">Home</Link></li>
             <li className="m-3 text-[#ecf39e] text-lg"><Link href="../about">About</Link></li>
-            <li className="m-3 text-[#ecf39e] text-lg"><Link href="../contect-us">Contact Us</Link></li>
+            <li className="m-3 text-[#ecf39e] text-lg"><Link href="../contect">Contact Us</Link></li>
         </ul>
     </div>
  )
